@@ -35,6 +35,7 @@ library
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.7 && <5
+    , transformers
   default-language: Haskell2010
 
 executable busyhask-exe
@@ -49,6 +50,7 @@ executable busyhask-exe
   build-depends:
       base >=4.7 && <5
     , busyhask
+    , transformers
   default-language: Haskell2010
 
 test-suite busyhask-test
@@ -64,4 +66,5 @@ test-suite busyhask-test
   build-depends:
       base >=4.7 && <5
     , busyhask
+    , transformers
   default-language: Haskell2010
